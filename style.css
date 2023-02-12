@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #202020;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2 {
+    font-size: 70px;
+}
+
+h1, h2, h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+}
+
+section {
+    max-width: 880px;
+    width: 880px;
+    height: 100vh;
+}
+
+.myphoto {
+    max-width: 100%;
+    border-radius: 3px;
+}
+
+.texto {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+}
+
+.navegacao {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 190px;
+    height: 100%;
+    background-color: #FCAB10;
+    position: fixed;
+    padding: 25px;
+}
+
+.navegacao>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #202020);
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.navegacao>a>img {
+    width: 8%;
+}
+
+header {
+    width: 215px;
+}
+
+.d-none{
+    display: none;
+}
+
+.menuAtivo {
+    background-color: #f3a000;
+    box-shadow: inset 2px 2px 5px #20202080;
+}
+
+body {
+    display: flex;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 250px;
+    width: 96%;
+    margin-left: 63px;
+    background: #fffaf1;
+}
+
+.sobremim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.me {
+    display: block;
+    line-height: 60px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 63%;
+    box-shadow: 0.7rem 0 0 #FCAB10;
+    animation:
+        mark .5s step-end infinite alternate,
+        write 3s steps(20, end);
+}
+
+@keyframes write {
+    0% {
+        width: 0
+    }
+}
+
+@keyframes mark {
+    40% {
+        box-shadow: 0.7rem 0 0 transparent
+    }
+}
+
+.plus-me {
+    display: flex;
+    gap: 47px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 13px;
+}
+
+.redes {
+    margin-top: 20px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.redes>a>img {
+    width: 40px;
+}
+
+.redes>a:hover {
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+.portifolio {
+    padding: 7px 8px;
+    border-radius: 3px;
+    color: #5a3f0b;
+    font-weight: 600;
+    background: linear-gradient(1deg, #FCAB10 0%, #c78e23 100%);
+}
+
+.descri {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555555;
+}
+
+.formacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+}
+
+.titulo-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grau {
+    font-size: 20px;
+}
+
+.instituicao {
+    color: #555555;
+    font-size: 14px;
+}
+
+.andamento {
+    color: #FCAB10;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.experiencias {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.exp {
+    display: flex;
+    flex-direction: column;
+}
+
+.exp>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.exp>ul>li {
+    list-style: inside;
+    margin-left: 10px;
+}
+
+.cargo {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.habilidades>ul {
+    display: flex;
+    gap: 33px;
+    flex-direction: column;
+}
+
+.habilidades>ul>li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.progresso {
+    border: 1px solid #5a3f0b69;
+    padding: 10px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.preenchimento {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #FCAB10 0%, #c78e23 100%);
+    box-shadow: inset 0rem 0px 10px #20202054;
+}
+
+.preen-html {
+    width: 60%;
+}
+
+.preen-css {
+    width: 50%;
+}
+
+.preen-js {
+    width: 15%;
+}
+
+.preen-photoshop {
+    width: 40%;
+}
+
+.preen-figma {
+    width: 30%;
+}
+
+.preen-pacote {
+    width: 60%;
+}
+
+.cursos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+.contato-span {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.contact-me {
+    position: relative;
+    display: flex;
+    gap: 25px;
+    width: 100%;
+}
+
+.modal {
+    position: absolute;
+    background: #202020;
+    padding: 20px;
+    box-shadow: 5px 5px 7px rgb(82 82 82 / 56%);
+    border-radius: 3px;
+    top: -103px;
+}
+
+.modal>p{
+    color: white;
+}
+
+.btn-confirmar{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.confirmar {
+    cursor: pointer;
+    background-color: #f3a000;
+    box-shadow: inset 2px 2px 5px #ffffff80;
+    padding: 5px 30px;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+.contact-me>a {
+    background: linear-gradient(1deg, #FCAB10 0%, #c78e23 100%);
+    padding: 7px;
+    border-radius: 3px;
+    width: 200px;
+    white-space: nowrap;
+    text-align: center;
+    font-weight: 600;
+    color: #5a3f0b;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.contact-me>a:hover {
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+.qualificacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.creditos {
+    position: absolute;
+    bottom: 30px;
+}
