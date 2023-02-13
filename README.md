@@ -11,3 +11,4 @@ Esse projeto foi desenvolvido com as tecnologias:
 
 ## 🚧 Projeto:
 Link do Projeto: 
+<a href="https://thabataamanda.github.io/meu_cv/">Link</a>
