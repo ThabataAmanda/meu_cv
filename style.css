@@ -29,6 +29,37 @@ h1, h2, h3 {
     font-family: 'Bebas Neue', cursive;
     font-weight: 400;
 }
+body::-webkit-scrollbar {
+    width:0.7rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: linear-gradient(1deg, #FCAB10 0%, #c78e23 100%);    
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #202020;   
+    border-radius: 4px;     
+  }
+
+.btn-trocar img{
+    width: 1.8rem;
+}
+
+.btn-trocar{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 0.6rem;
+    background: #eeeeee;
+    gap: 5px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px #20202080;
+    z-index: 99;
+}
 
 section {
     max-width: 880px;
@@ -64,11 +95,12 @@ section {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    color: #202020);
+    white-space: nowrap;
+    color: #202020;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 0.7rem;
     border-radius: 3px;
-    padding: 5px;
+    padding: 6px;
 }
 
 .navegacao>a>img {
@@ -171,6 +203,7 @@ main {
     font-size: 14px;
     font-weight: 500;
     color: #555555;
+    text-align: center;
 }
 
 .formacoes {
@@ -246,6 +279,48 @@ main {
     padding: 10px;
     border-radius: 3px;
     position: relative;
+}
+
+.pree-html::after {
+    content: '60%';
+    position: absolute;
+    font-weight: 600;
+    right: 6px;
+}
+
+.preen-css::after {
+    content: '50%';
+    position: absolute;
+    font-weight: 600;
+    right: 6px;
+}
+
+.preen-js::after {
+    content: '15%';
+    position: absolute;
+    font-weight: 600;
+    right: 6px;
+}
+
+.preen-photoshop::after {
+    content: '40%';
+    position: absolute;
+    font-weight: 600;
+    right: 6px;
+}
+
+.preen-figma::after {
+    content: '30%';
+    position: absolute;
+    font-weight: 600;
+    right: 6px;
+}
+
+.preen-pacote::after {
+    content: '60%';
+    position: absolute;
+    font-weight: 600;
+    right: 6px;
 }
 
 .preenchimento {
