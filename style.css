@@ -282,7 +282,7 @@ main {
     position: relative;
 }
 
-.pree-html::after {
+.preen-html::after {
     content: '60%';
     position: absolute;
     font-weight: 600;
