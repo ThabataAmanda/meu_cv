@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
-
-
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +7,10 @@
     color: #202020;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
     margin: 0;
 }
 
@@ -21,32 +22,36 @@ li {
     list-style: none;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-size: 70px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Bebas Neue', cursive;
     font-weight: 400;
 }
-body::-webkit-scrollbar {
-    width:0.7rem;
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: linear-gradient(1deg, #FCAB10 0%, #c78e23 100%);    
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: #202020;   
-    border-radius: 4px;     
-  }
 
-.btn-trocar img{
+body::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: linear-gradient(1deg, #FCAB10 0%, #c78e23 100%);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #202020;
+    border-radius: 4px;
+}
+
+.btn-trocar img {
     width: 1.8rem;
 }
 
-.btn-trocar{
+.btn-trocar {
     position: fixed;
     right: 10px;
     top: 10px;
@@ -112,7 +117,7 @@ header {
     width: 215px;
 }
 
-.d-none{
+.d-none {
     display: none;
 }
 
@@ -150,9 +155,7 @@ main {
     white-space: nowrap;
     width: 63%;
     box-shadow: 0.7rem 0 0 #FCAB10;
-    animation:
-        mark .5s step-end infinite alternate,
-        write 3s steps(20, end);
+    animation: mark .5s step-end infinite alternate, write 3s steps(20, end);
 }
 
 @keyframes write {
@@ -283,14 +286,14 @@ main {
 }
 
 .preen-html::after {
-    content: '60%';
+    content: '70%';
     position: absolute;
     font-weight: 600;
     right: 6px;
 }
 
 .preen-css::after {
-    content: '50%';
+    content: '60%';
     position: absolute;
     font-weight: 600;
     right: 6px;
@@ -334,11 +337,11 @@ main {
 }
 
 .preen-html {
-    width: 60%;
+    width: 70%;
 }
 
 .preen-css {
-    width: 50%;
+    width: 60%;
 }
 
 .preen-js {
@@ -393,11 +396,11 @@ main {
     top: -103px;
 }
 
-.modal>p{
+.modal>p {
     color: white;
 }
 
-.btn-confirmar{
+.btn-confirmar {
     display: flex;
     justify-content: center;
     margin-top: 10px;
