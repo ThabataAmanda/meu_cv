@@ -1,77 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: #202020;
-}
-
-h1,
-h2,
-h3,
-p {
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
-h1,
-h2 {
-    font-size: 70px;
-}
-
-h1,
-h2,
-h3 {
-    font-family: 'Bebas Neue', cursive;
-    font-weight: 400;
-}
-
-body::-webkit-scrollbar {
-    width: 0.7rem;
-}
-
-body::-webkit-scrollbar-track {
-    background: linear-gradient(1deg, #FCAB10 0%, #c78e23 100%);
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: #202020;
-    border-radius: 4px;
-}
-
-.btn-trocar img {
-    width: 1.8rem;
-}
-
-.btn-trocar {
-    position: fixed;
-    right: 10px;
-    top: 10px;
-    display: flex;
-    align-items: center;
-    border-radius: 4px;
-    font-size: 0.6rem;
-    background: #eeeeee;
-    gap: 5px;
-    padding: 10px;
-    box-shadow: 2px 2px 5px #20202080;
-    z-index: 99;
-}
-
-section {
-    max-width: 880px;
-    width: 880px;
-    height: 100vh;
-}
-
+/***** Navegacao *****/
 .myphoto {
     max-width: 100%;
     border-radius: 3px;
@@ -87,26 +14,26 @@ section {
 .navegacao {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
     max-width: 190px;
     height: 100%;
     background-color: #FCAB10;
     position: fixed;
-    padding: 25px;
+    padding: 15px;
 }
 
 .navegacao>a {
     display: flex;
     cursor: pointer;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 10px;
     white-space: nowrap;
     color: #202020;
     font-weight: 600;
-    font-size: 0.7rem;
+    font-size: 0.60rem;
     border-radius: 3px;
-    padding: 6px;
+    padding: 10px;
 }
 
 .navegacao>a>img {
@@ -117,29 +44,14 @@ header {
     width: 215px;
 }
 
-.d-none {
-    display: none;
-}
-
 .menuAtivo {
     background-color: #f3a000;
     box-shadow: inset 2px 2px 5px #20202080;
 }
 
-body {
-    display: flex;
-}
+/***** fim Navegacao *****/
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 250px;
-    width: 96%;
-    margin-left: 63px;
-    background: #fffaf1;
-}
-
+/***** Introducao *****/
 .sobremim {
     display: flex;
     flex-direction: column;
@@ -156,18 +68,6 @@ main {
     width: 63%;
     box-shadow: 0.7rem 0 0 #FCAB10;
     animation: mark .5s step-end infinite alternate, write 3s steps(20, end);
-}
-
-@keyframes write {
-    0% {
-        width: 0
-    }
-}
-
-@keyframes mark {
-    40% {
-        box-shadow: 0.7rem 0 0 transparent
-    }
 }
 
 .plus-me {
@@ -210,6 +110,9 @@ main {
     text-align: center;
 }
 
+/***** fim Introducao *****/
+
+/***** formacao *****/
 .formacoes {
     display: flex;
     flex-direction: column;
@@ -238,6 +141,9 @@ main {
     font-size: 13px;
 }
 
+/***** fim formacao *****/
+
+/***** experiencia *****/
 .experiencias {
     display: flex;
     flex-direction: column;
@@ -265,7 +171,9 @@ main {
     font-weight: 700;
     margin-bottom: 16px;
 }
+/***** fim experiencia *****/
 
+/***** habilidades *****/
 .habilidades>ul {
     display: flex;
     gap: 33px;
@@ -328,6 +236,8 @@ main {
 }
 
 .preenchimento {
+    display: flex;
+    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -359,13 +269,17 @@ main {
 .preen-pacote {
     width: 60%;
 }
+/***** fim habilidades *****/
 
+/***** cursos *****/
 .cursos {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
+/***** fim cursos *****/
 
+/***** contato *****/
 .contato {
     display: flex;
     flex-direction: column;
@@ -383,6 +297,7 @@ main {
 .contact-me {
     position: relative;
     display: flex;
+    justify-content: center;
     gap: 25px;
     width: 100%;
 }
@@ -394,6 +309,7 @@ main {
     box-shadow: 5px 5px 7px rgb(82 82 82 / 56%);
     border-radius: 3px;
     top: -103px;
+    z-index: 9;
 }
 
 .modal>p {
@@ -438,7 +354,9 @@ main {
     flex-direction: column;
     gap: 30px;
 }
+/***** dim contato *****/
 
+/* footer */
 .creditos {
     position: absolute;
     bottom: 30px;
