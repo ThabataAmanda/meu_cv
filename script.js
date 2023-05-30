@@ -6,8 +6,6 @@ btn.addEventListener("click", event => {
     textArea.select();
     document.execCommand('copy');
     document.querySelector('.modal').classList.remove('d-none')
-        // alert('ID do Discord, copiado! :) me adicione e envie uma mensagem')
-
 });
 
 let confirmar = document.querySelector('.confirmar')
@@ -15,20 +13,24 @@ confirmar.addEventListener("click", event => {
     document.querySelector('.modal').classList.add('d-none')
 });
 
-$('a').on('click', function() {
+$('a').on('click', function () {
+    var targetSection = $('#' + $(this).data('section'));
     $("html, body").animate({
-        scrollTop: $('#' + $(this).data('section')).offset().top
+        scrollTop: targetSection.offset().top
     }, 500);
 });
 
 var alturas = {};
-$('.section').each(function() {
+$('.section').each(function () {
     alturas[$(this).prop('id')] = $(this).offset().top;
 });
 
-$(window).on('scroll', function() {
+$(window).on('scroll', function () {
+    var windowHeight = $(window).height();
+    var scrollTop = $(window).scrollTop();
+
     for (var seccao in alturas) {
-        if ($(window).scrollTop() >= alturas[seccao]) {
+        if (scrollTop + windowHeight >= alturas[seccao]) {
             $('.navegacao a').removeClass('menuAtivo');
             $('.navegacao a[data-section="' + seccao + '"]').addClass('menuAtivo');
         }
