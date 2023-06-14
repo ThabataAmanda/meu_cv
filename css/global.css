@@ -78,6 +78,7 @@ section {
 
 body {
     display: flex;
+    background-image: url(/img/texture2.jpg);
 }
 
 main {
@@ -86,8 +87,11 @@ main {
     align-items: center;
     gap: 250px;
     width: 96%;
-    margin-left: 63px;
+    padding-left: 63px;
     background: #fffaf1;
+    background-image: url(/img/texture2.jpg);
+    background-size: contain;
+
 }
 
 @keyframes write {
