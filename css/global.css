@@ -78,7 +78,7 @@ section {
 
 body {
     display: flex;
-    background-image: url(/img/texture2.jpg);
+    background-image: url(../img/texture2.jpg);
 }
 
 main {
@@ -89,7 +89,7 @@ main {
     width: 96%;
     padding-left: 63px;
     background: #fffaf1;
-    background-image: url(/img/texture2.jpg);
+    background-image: url(../img/texture2.jpg);
     background-size: contain;
 
 }
