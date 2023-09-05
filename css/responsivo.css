@@ -1,4 +1,4 @@
-@media(max-width: 600px) {
+@media(max-width: 900px) {
     header {
         display: none;
     }
@@ -10,7 +10,7 @@
 
     main {
         width: 100%;
-        margin-left: 0;
+        padding-left: 0;
     }
 
     .sobremim {
