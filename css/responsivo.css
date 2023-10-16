@@ -5,7 +5,11 @@
 
     section {
         max-width: 370px;
-        height: 60vh;
+        height: 70vh;
+    }
+
+    .experiencia, .contato {
+        height: 175vh;
     }
 
     main {
@@ -57,12 +61,21 @@
         position: relative;
     }
 
-    .curso{
+    .curso {
         position: relative;
     }
 
     .contato {
         margin-top: 220px;
+    }
+
+    .listas>ul {
+        gap: 10px;
+    }
+
+    .listas>ul>li {
+        width: 65PX;
+        height: 80px;
     }
 }
 
